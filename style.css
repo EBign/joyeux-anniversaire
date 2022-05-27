@@ -1,0 +1,41 @@
+body{
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+.cadeau{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: devoile 5s;
+    opacity: 0;
+}
+@keyframes devoile{
+    0%{
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  .invit{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -5;
+  }
+  @media only screen and (max-width: 800px) {
+      .cadeau, .invit{
+          width: 100%;
+          top: 0;
+      }
+  }
